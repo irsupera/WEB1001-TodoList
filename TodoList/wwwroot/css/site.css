@@ -12,10 +12,16 @@ a {
   color: #0366d6;
 }
 
+.btn-new {
+    color: #fff;
+    background-color: #1bc26f;
+    border-color: #159555;
+}
+
 .btn-primary {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
 }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
@@ -24,14 +30,19 @@ a {
   border-color: #1861ac;
 }
 
+.th-gray {
+    color: #808080;
+    font-style: italic;
+}
+
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
-  font-size: 14px;
+  font-size: 12px;
 }
 @media (min-width: 768px) {
   html {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 

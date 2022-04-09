@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1pzxlI5smEQMkzhihHEwZnRV7o9t8GrLNl1A/JGJEjN9c9ME9+JpJ/WZrT1Mxc/hJsLcNtpNNqU0NAGCFcjKww==",
+  "dgSpecHash": "XosIzb9qEpHZ4jesZB8yo0Q/anSkfI3XKrkIScEl+1S0al6dmGNXZdVBlRrRJIUDkeHddSyTO1hLTKdhYT6XRQ==",
   "success": true,
-  "projectFilePath": "/Users/irsupera/Documents/WEB-1001/Assign/TodoList/TodoList/TodoList.csproj",
+  "projectFilePath": "/Users/irsupera/Documents/WEB-1001/github/WEB1001-TodoList/TodoList/TodoList.csproj",
   "expectedPackageFiles": [
     "/Users/irsupera/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/Users/irsupera/.nuget/packages/microsoft.aspnetcore.html.abstractions/2.2.0/microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",

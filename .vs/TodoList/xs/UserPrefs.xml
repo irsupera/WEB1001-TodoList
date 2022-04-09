@@ -1,0 +1,31 @@
+﻿<Properties StartupConfiguration="{1F6B5D44-0AF3-42A8-ABBF-82BA63A18787}|Default">
+  <MonoDevelop.Ide.ItemProperties.TodoList PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="TodoList/Pages/Index.cshtml">
+    <Files>
+      <File FileName="TodoList/wwwroot/css/site.css" Line="15" Column="11" />
+      <File FileName="TodoList/Pages/Index.cshtml" Line="11" Column="41" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="TodoList" expanded="True">
+            <Node name="TodoList" expanded="True">
+              <Node name="Pages" expanded="True">
+                <Node name="Index.cshtml" selected="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

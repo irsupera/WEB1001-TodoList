@@ -7475,11 +7475,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/irsupera/Documents/WEB-1001/Assign/TodoList/TodoList/TodoList.csproj",
+      "projectUniqueName": "/Users/irsupera/Documents/WEB-1001/github/WEB1001-TodoList/TodoList/TodoList.csproj",
       "projectName": "TodoList",
-      "projectPath": "/Users/irsupera/Documents/WEB-1001/Assign/TodoList/TodoList/TodoList.csproj",
+      "projectPath": "/Users/irsupera/Documents/WEB-1001/github/WEB1001-TodoList/TodoList/TodoList.csproj",
       "packagesPath": "/Users/irsupera/.nuget/packages/",
-      "outputPath": "/Users/irsupera/Documents/WEB-1001/Assign/TodoList/TodoList/obj/",
+      "outputPath": "/Users/irsupera/Documents/WEB-1001/github/WEB1001-TodoList/TodoList/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/irsupera/.config/NuGet/NuGet.Config"
