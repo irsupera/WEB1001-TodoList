@@ -1,10 +1,116 @@
-﻿@page
-@model IndexModel
+@page
+@model TodoList.Pages.IndexModel
+
 @{
-    ViewData["Title"] = "Home page";
+    int ctr = 0;
+    bool iscomp = false;
+    ViewData["Title"] = "Index";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<p>
+    <a asp-page="Create" class="btn btn-new">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th colspan="5">
+                Incomplete
+            </th>
+        </tr>
+        <tr class="th-gray">
+            <th>
+                No.
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Todo[0].Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Todo[0].IsComplete)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Todo[0].AddDate)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Todo) {
+    iscomp = item.IsComplete;
+    if (iscomp == false)
+    {
+        ctr++;
+        <tr>
+            <td>
+                @ctr
+            </td>
+            <td>
+                <a asp-page="./Details" asp-route-id="@item.ID">
+                    @Html.DisplayFor(modelItem => item.Description)
+                </a>
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsComplete)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AddDate)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.ID" class="btn btn-primary">Edit</a>
+            </td>
+        </tr>
+    }
+}
+    </tbody>
+
+    <thead>
+        <tr>
+            <th colspan="5">
+                Complete
+            </th>
+        </tr>
+        <tr class="th-gray">
+            <th>
+                No.
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Todo[0].Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Todo[0].IsComplete)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Todo[0].CompleteDate)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@{ ctr = 0; }
+@foreach (var item in Model.Todo) {
+    iscomp = item.IsComplete;
+    if (iscomp == true)
+    {
+        ctr++;
+        <tr>
+            <td>
+                @ctr
+            </td>
+            <td>
+                <a asp-page="./Delete" asp-route-id="@item.ID">
+                    @Html.DisplayFor(modelItem => item.Description)
+                </a>
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsComplete)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CompleteDate)
+            </td>
+            <td>
+                <a asp-page="./Delete" asp-route-id="@item.ID" class="btn btn-danger">Delete</a>
+            </td>
+        </tr>
+    }
+}
+    </tbody>
+</table>
